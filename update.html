@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doc</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <nav class="menu">
+        <div class="menu-container">
+            <a href="index.html" class="logo">User-CRUD</a>
+
+            <div class="menu-items">
+                <a href="index.html" class="link">Home</a>
+                <a href="create.html" class="link">Create</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="title">
+            <h1>Update Member</h1>
+        </div>
+
+        <div class="form-container">
+            <form autocomplete="off" method="post" onsubmit="submitHandler(event)">
+                <div class="form-item">
+                    <label for="name">membername</label>
+                    <input type="text" name="membername" id="membername" class="form-input" required>
+                </div>
+                <div class="form-item">
+                    <label for="emailid">EmailId</label>
+                    <input type="email" name="emailid" id="emailid" class="form-input" required>
+                </div>
+                
+                <div class="form-item">
+                    <label for="hobby">Hobby</label>
+                    <input type="text" name="hobby" id="hobby" class="form-input" required>
+                </div>
+                 <div class="form-item">
+                    <label for="age">Age</label>
+                    <input type="number" name="age" id="age" class="form-input" required>
+                </div>
+                <div class="form-item">
+                    <label for="phone">Phone</label>
+                    <input type="number" name="phone" id="phone" class="form-input" required>
+                </div>
+                <div class="form-item">
+                    <label for="gender">Gender</label>
+                    <select name="gender" id="gender" class="form-input" required>
+                        <option value="null">Choose Gender</option>
+                        <option value="male">Male</option>
+                         <option value="female">Female</option>
+                          <option value="others">others</option>
+                        
+                    </select>
+
+                </div>
+                <div class="form-item">
+                    <label for="qualification">Qualification</label>
+                    <select name="qualification" id="qualification" class="form-input" required>
+                        <option value="null">Choose qualification</option>
+                        <option value="student">student/learner</option>
+                        <option value="developer">developer</option>
+                        <option value="medicine">medicine</option>
+                        <option value="arts">arts</option>
+                        <option value="others">others</option>
+
+                    </select>
+                </div>
+                
+                <div class="form-item">
+                    <button class="btn success">Update user</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="./js/edit.js"></script>
+</body>
+</html>
